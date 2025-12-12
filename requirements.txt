@@ -1,0 +1,9 @@
+# Necesitamos la API que nos ofrecen al darnos de alta en la web: www.serpapi.com
+Django>=5.1, <5.3
+djangorestframework
+python-decouple # Alternativa: python-dotenv .
+requests
+Celery
+redis
+django-celery-beat
+django-celery-results

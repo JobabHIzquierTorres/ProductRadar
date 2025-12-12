@@ -1,0 +1,51 @@
+services:
+  web:
+    build: .
+    container_name: "productradar_web"
+    command: python manage.py runserver 0.0.0.0:8000
+    working_dir: /app/src
+    volumes:
+      - .:/app
+      - ./exports_local:/exports_local
+    ports:
+      - "8010:8000"
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+  redis:
+    image: "redis:latest"
+    container_name: "productradar_redis"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  celery:
+    build: .
+    container_name: "productradar_celery"
+    command: celery -A ProductRadar worker --pool=solo --loglevel=info
+    working_dir: /app/src
+    volumes:
+      - .:/app
+      - ./exports_local:/exports_local
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+  celery-beat:
+    build: .
+    container_name: "productradar_celery_beat"
+    command: celery -A ProductRadar beat --loglevel=info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+    working_dir: /app/src
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    env_file:
+      - .env
+
+volumes:
+  redis_data:
