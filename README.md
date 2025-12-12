@@ -21,7 +21,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 - [Estructura](#estructura)
 - [Instalación y uso](#instalación-y-uso)
 - [Despliegue con Docker](#despliegue-con-docker)
-- [Uso de Django Shell y Celery para ejecutar las tareas manualmente](#uso-de-django-shell-y-Celery-para-ejecutar-tareas-manualmente)
+- [Ejecutar las tareas manualmente](#ejecutar-las-tareas-manualmente)
 - [Objetivo del proyecto](#objetivo-del-proyecto)
 - [Estado del proyecto](#estado-del-proyecto)
 - [Licencia – Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](#licencia--creative-commons-attribution-noncommercial-40-international-cc-by-nc-40)
@@ -30,7 +30,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 ---
 ---
 
-# 🚀 Características
+# Características
 
 ## 🛒 Scraping automático de Amazon
 - Obtención de productos mediante SerpAPI (Amazon Engine).
@@ -59,7 +59,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 - Fácil de extender con nuevas fuentes.
 ---
 ---
-# 🛠️ Tecnologías
+# Tecnologías
 
 - **Django** – Backend principal.
 - **Celery** – Ejecución de tareas asíncronas.
@@ -72,7 +72,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 ---
 
 ---
-# 🏗️ Estructura
+# Estructura
 ```
 
 ProductRadar/
@@ -91,7 +91,7 @@ ProductRadar/
 ```
 ---
 
-# ⚡ Instalación y uso
+# Instalación y uso
 
 1. Clonar el repositorio
 ```bash
@@ -108,7 +108,7 @@ ProductRadar/
   SERPAPI_API_KEY=tu_api_key
 ```
 ---
-# 🐳 Despliegue con Docker
+# Despliegue con Docker
 
 Levantar todos los servicios:
 ```bash
@@ -132,7 +132,7 @@ Ver logs de Celery Beat:
 ```
 
 ---
-# 🐚 Uso de Django Shell y Celery para ejecutar tareas manualmente
+# Ejecutar las tareas manualmente
 
 ✅ Entrar al contenedor web
 ```bash
@@ -163,7 +163,7 @@ En otra terminal:
 ```
 
 ---
-# 🧭 Objetivo del proyecto
+# Objetivo del proyecto
 
 ProductRadar busca automatizar la obtención de productos de Amazon para facilitar:
 - análisis de precios
@@ -175,7 +175,7 @@ ProductRadar busca automatizar la obtención de productos de Amazon para facilit
 Todo ello manteniendo una arquitectura escalable y fácil de extender.
 ---
 
-# 🚧 Estado del Proyecto
+# Estado del Proyecto
 
 Importante: Este proyecto se encuentra en fase de desarrollo y no está preparado para despliegue en producción.
 
@@ -189,7 +189,7 @@ Recomendaciones
 - No usar en producción sin una configuración avanzada de seguridad y despliegue.
 ---
 
-# 📄 Licencia – Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+# Licencia – Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 Este proyecto se encuentra bajo la licencia **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
 
@@ -228,6 +228,6 @@ Si deseas colaborar:
 
 ---
 
-# 📬 Contacto
+# Contacto
 
 📧 jhizquier.dev@gmail.com
