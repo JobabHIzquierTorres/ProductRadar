@@ -4,4 +4,4 @@
 
 # Tareas pendientes
 
-[v] Guardar solo productos nuevos - cambiar búsqueda - exportar csv
+[v]  Cambiar búsqueda (más productos a la vez) - exportar csv
