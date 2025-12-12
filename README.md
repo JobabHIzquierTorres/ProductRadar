@@ -25,12 +25,12 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 - [Objetivo del proyecto](#objetivo-del-proyecto)
 - [Estado del proyecto](#estado-del-proyecto)
 - [Licencia – Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](#licencia--creative-commons-attribution-noncommercial-40-international-cc-by-nc-40)
-- [Contribuciones](#contribuciones)
 - [Contacto](#contacto)
 
 ---
+---
 
-# 🚀 Características principales
+# 🚀 Características
 
 ## 🛒 Scraping automático de Amazon
 - Obtención de productos mediante SerpAPI (Amazon Engine).
@@ -57,7 +57,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 ## 🧱 Escalabilidad
 - Arquitectura modular basada en Django.
 - Fácil de extender con nuevas fuentes.
-
+---
 ---
 # 🛠️ Tecnologías
 
@@ -72,7 +72,7 @@ alertas de bajadas, comparadores o dashboards de seguimiento.
 ---
 
 ---
-## Estructura
+# 🏗️ Estructura
 ```
 
 ProductRadar/
@@ -103,7 +103,7 @@ ProductRadar/
 ```bash
   cp sample-.env .env
 ```
-Editar clave de SerpAPI:
+3. Editar clave de SerpAPI:
 ```python
   SERPAPI_API_KEY=tu_api_key
 ```
@@ -172,5 +172,62 @@ ProductRadar busca automatizar la obtención de productos de Amazon para facilit
 - exportación de datos
 - integración con dashboards o sistemas externos
 
-Todo ello manteniendo una arquitectura limpia, escalable y fácil de extender.
+Todo ello manteniendo una arquitectura escalable y fácil de extender.
 ---
+
+# 🚧 Estado del Proyecto
+
+Importante: Este proyecto se encuentra en fase de desarrollo y no está preparado para despliegue en producción.
+
+Limitaciones actuales
+- Configuración de seguridad básica.
+- Falta de configuración para despliegue en servidores reales.
+- Puede contener funcionalidades incompletas o en evolución.
+  
+Recomendaciones
+- Usar únicamente en entornos de desarrollo o testing.
+- No usar en producción sin una configuración avanzada de seguridad y despliegue.
+---
+
+# 📄 Licencia – Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+Este proyecto se encuentra bajo la licencia **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.
+
+### Permisos otorgados
+
+Puedes:
+
+- **Compartir**: copiar y redistribuir el material en cualquier medio o formato.
+- **Adaptar**: remezclar, transformar y construir a partir del material.
+
+### Restricciones
+
+No puedes:
+
+- Usar el material con fines comerciales.
+- Aplicar restricciones legales o tecnológicas que impidan a otros hacer lo que permite esta licencia.
+
+### Enlace oficial
+
+Consulta los términos completos de la licencia en el sitio oficial de Creative Commons:  
+[https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+### Garantía
+
+Este software se proporciona **"tal cual"**, sin garantías de ningún tipo.  
+El autor no se hace responsable de posibles daños derivados del uso del código.
+
+### Contribuciones
+
+Las contribuciones son bienvenidas siempre que respeten la licencia.  
+Si deseas colaborar:
+
+1. Haz un **fork** del repositorio.
+2. Crea una **rama** para tu mejora o corrección.
+3. Realiza un **pull request** con una descripción clara de los cambios.
+
+---
+
+# 📬 Contacto
+
+📧 jhizquier.dev@gmail.com
